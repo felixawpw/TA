@@ -1,11 +1,13 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorDark">@color/appColorDark</item>
+        <item name="colorMediumDark">@color/appColorMediumDark</item>
+        <item name="colorMediumLight">@color/appColorMediumLight</item>
+        <item name="colorLight">@color/appColorLight</item>
+        <item name="colorAccent">@color/appColorAccent</item>
+        <item name="colorBlack">@color/appColorBlack</item>
+        <item name="colorWhite">@color/appColorWhite</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +18,13 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Spinner" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:spinnerItemStyle">@style/AppTheme.Spinner</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@color/appColorWhite</item>
+        <item name="android:textColor">@color/appColorBlack</item>
+        <item name="android:textSize">24sp</item>
+    </style>
 
 </resources>

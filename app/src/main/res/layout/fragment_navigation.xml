@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NavigationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/appColorWhite"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <Spinner
             android:id="@+id/fragment_navigation_combo_maps"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Spinner" />
 
         <ImageView
-            android:id="@+id/fragment_navigation_imageView"
+            android:id="@+id/fragment_navigation_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/nav_image"
             android:src="@android:color/background_light" />
 
     </LinearLayout>
+
 </FrameLayout>

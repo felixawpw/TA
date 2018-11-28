@@ -101,7 +101,7 @@ public class NavigationFragment extends Fragment {
                              ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_navigation, container, false);
-        imageMap = (ImageView) view.findViewById(R.id.fragment_navigation_imageView);
+        imageMap = (ImageView) view.findViewById(R.id.fragment_navigation_image_view);
         comboMaps = (Spinner) view.findViewById(R.id.fragment_navigation_combo_maps);
 
         Bundle extras = getArguments();

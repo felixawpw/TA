@@ -3,28 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_find_location"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="Find Location" />
+            android:title="@string/drawer_find_location" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_calibrate"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Calibrate" />
+            android:title="@string/drawer_calibrate" />
+        <item
+            android:id="@+id/nav_how_to_use"
+            android:icon="@drawable/ic_baseline_help_24px"
+            android:title="@string/drawer_how_to_use" />
     </group>
 
-    <item android:title="Guide">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="How To Use" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Log Out" />
-        </menu>
-    </item>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_baseline_exit_to_app_24px"
+            android:title="@string/drawer_log_out" />
+    </group>
 
 </menu>

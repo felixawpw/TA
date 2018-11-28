@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/appColorWhite"
         android:orientation="vertical">
 
         <!-- The ActionBar displayed at the top -->
@@ -22,9 +23,10 @@
         <!-- The main content view where fragments are loaded -->
         <FrameLayout
             android:id="@+id/fragmentLayout"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
