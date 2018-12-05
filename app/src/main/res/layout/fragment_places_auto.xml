@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appColorWhite"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/find_loc_caption_select"
+            android:textColor="@color/appColorDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fragment_places_auto_button_first_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_find_location"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:text="@string/find_loc_empty"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/appColorBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment_places_auto_button_second_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_find_location"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:text="@string/find_loc_empty"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/appColorBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment_places_auto_button_third_selection"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_find_location"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:text="@string/find_loc_empty"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/appColorBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/fragment_places_auto_button_fourth_selection"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_find_location"
+            android:fontFamily="sans-serif"
+            android:padding="15dp"
+            android:text="@string/find_loc_empty"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/appColorBlack"
+            android:textSize="18sp" />
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/fragment_places_auto_button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_primary"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/find_loc_button_confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/appColorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:text="@string/find_loc_caption_bottom"
+                android:textAlignment="textStart"
+                android:textColor="@color/appColorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/fragment_places_auto_button_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_secondary"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/find_loc_button_enter"
+                android:textAllCaps="false"
+                android:textColor="@color/appColorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
